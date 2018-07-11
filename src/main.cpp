@@ -19,10 +19,10 @@ void setup() {
 void loop() {
 
     val = analogRead(A0);
-    angle = abs(val*180/1023);
+    val = map(val, 0, 1023, 0, 180);
     
-    myServo.write(angle);
-    Serial.println(angle);
+    myServo.write(val);
+    Serial.println(val);
     
     delay(50);
 
