@@ -1,4 +1,5 @@
 #include <Arduino.h>
+#include <Servo.h>
 
 void setup() {
     pinMode(13,OUTPUT);
@@ -6,7 +7,7 @@ void setup() {
 
 void loop() {
     digitalWrite(13,1);
-    delay(200);
+    delay(250);
     digitalWrite(13,0);
-    delay(200);
+    delay(250);
 }
